@@ -14,7 +14,7 @@ def calcPizzaCost(diameter, cost):
     area = 3.1415 * radius * radius
     return cost / area
 
-twelveInch = calcPizzaCost(12,12.50)
+twelveInch = calcPizzaCost(12,14.50)
 tenInch = calcPizzaCost(10,8.50)
 
 print("Twelve inch pizza cost per sq inch " + str(twelveInch))
