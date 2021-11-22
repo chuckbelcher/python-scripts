@@ -19,7 +19,9 @@ if userDivisor:
     print(userDivsor)
 else:
     print('Performing odd/even testing ...\n')
-    if userNumber % 2 = 0:
-        print(Your number is even)
+    if userNumber % 2 == 0:
+        print("Your number %d is even" %(userNumber))
     else:
-        print(Your number is odd)
+        print("Your number %d is odd" %(userNumber))
+
+
