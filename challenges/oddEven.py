@@ -16,11 +16,19 @@ userDivisor = input('What is your divisor, leave blank for odd/even testing: ')
 
 print(userNumber)
 if userDivisor:
-    print(userDivsor)
+    # make userDivisor an int so that it can be used for math
+    userDivisor = int(userDivisor)
+    if userNumber % userDivisor == 0:
+        print('Congratulations, %d is divisible by %d' %(userNumber, userDivisor))
+    else:
+        print('Sorry, %d is NOT divisible by %d' %(userNumber, userDivisor))
 else:
     print('Performing odd/even testing ...\n')
     if userNumber % 2 == 0:
         print("Your number %d is even" %(userNumber))
+        # Print different message is userNumber is divisible by 4
+        if userNumber % 4 == 0:
+            print('Your number %d is also divisible by 4' %(userNumber))
     else:
         print("Your number %d is odd" %(userNumber))
 
