@@ -52,3 +52,10 @@ for num in range(1, 101):
         print('buzz')
     else:
         print(num)
+
+# Use List Comprehension to create a
+# list for the first letters of every word in a string
+# Note [0] takes the first letter
+myList = [word[0] for word in myString.split()]
+print(myString)
+print(myList)
